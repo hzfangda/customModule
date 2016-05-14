@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>自定义js模块</title>
+  <style>
+      input {
+          width: 100px;
+          line-height: 30px;          
+      }
+      button { 
+          background-color: #ffc; 
+          width: 80px;
+          height: 40px;
+      }
+      label {
+          background: #ffc;
+      }
+  </style>
+  
+</head>
+<body>
+  <h1>乘法</h1>
+  <input class='num1'/> * <input class='num2'/> 
+  <button class='calc'>=</button>
+  <label class="result"></label>
+  <button class='clear'>重置</button>
+</body>
+  <script src='../js/jquery.min.js'></script>
+  <script src='../js/myapp.js'></script>
+  <script src='../js/calc.js'></script>
+  <script>
+      myapp.init();
+  </script>
+  
+</html>
